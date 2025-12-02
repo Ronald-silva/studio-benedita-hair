@@ -40,7 +40,7 @@ const CTASection: React.FC<CTASectionProps> = ({ onOpenBooking }) => {
                 <span className="font-semibold text-lg">{CONTACT_INFO.phone}</span>
             </div>
             
-            <a href={`https://instagram.com/${CONTACT_INFO.instagram.replace('@', '')}`} target="_blank" rel="noreferrer" className="flex items-center gap-3 group hover:opacity-80 transition-opacity">
+            <a href={CONTACT_INFO.instagramUrl} target="_blank" rel="noreferrer" className="flex items-center gap-3 group hover:opacity-80 transition-opacity">
                 <div className="bg-white/30 p-3 rounded-full">
                     <Instagram size={24} className="text-studio-black" />
                 </div>

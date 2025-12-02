@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                     Especialistas em realçar sua beleza natural através de tratamentos capilares de alta performance.
                 </p>
                 <div className="flex gap-4">
-                    <a href="https://www.instagram.com/studio_benedita_hair/?__pwa=1" className="bg-gray-800 p-2 rounded-full hover:bg-studio-gold transition-colors text-white">
+                    <a href={CONTACT_INFO.instagramUrl} className="bg-gray-800 p-2 rounded-full hover:bg-studio-gold transition-colors text-white">
                         <Instagram size={20} />
                     </a>
                     

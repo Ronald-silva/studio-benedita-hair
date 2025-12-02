@@ -138,6 +138,7 @@ export const FAQS: FaqItem[] = [
 
 export const CONTACT_INFO = {
   phone: '(85) 98646-0688',
-  instagram: '@benedita_0609',
+  instagram: '@studio_benedita_hair',
+  instagramUrl: 'https://www.instagram.com/studio_benedita_hair/?__pwa=1',
   address: 'R. Aloísio Lorscheider - Jóquei Clube, Fortaleza - CE, 60510-065'
 };

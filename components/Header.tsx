@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
-          <a href="#" className="font-heading font-bold text-xl md:text-2xl tracking-tighter text-studio-black">
+          <a href="#" className={`font-heading font-bold text-xl md:text-2xl tracking-tighter ${isScrolled ? 'text-studio-black' : 'text-white'}`}>
             Studio <span className="text-studio-gold">Benedita</span> Hair
           </a>
         </div>
@@ -47,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
             <button 
               key={link.label}
               onClick={() => scrollToSection(link.href)}
-              className="text-sm font-medium text-studio-black hover:text-studio-gold transition-colors uppercase tracking-wide"
+              className={`text-sm font-medium hover:text-studio-gold transition-colors uppercase tracking-wide ${isScrolled ? 'text-studio-black' : 'text-white'}`}
             >
               {link.label}
             </button>
@@ -64,7 +64,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-studio-black"
+          className={`md:hidden ${isScrolled ? 'text-studio-black' : 'text-white'}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
