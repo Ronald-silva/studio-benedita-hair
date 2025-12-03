@@ -22,19 +22,25 @@
             },
             colors: {
               studio: {
-                black: '#2D2D2D',
-                gold: '#D4AF37',
-                goldLight: '#EAC85D',
-                pink: '#E8B4D4',
-                pinkHover: '#F5A6C8',
-                offWhite: '#FAFAFA',
-                text: '#1A1A1A',
-                border: '#E0E0E0',
+                primary: '#6D28D9', // Violet 700 - High contrast with white
+                primaryDark: '#4C1D95', // Violet 900 - Very high contrast
+                secondary: '#8B5CF6', // Violet 500 - Vibrant accent
+                accent: '#DDD6FE', // Violet 200 - Soft background
+                background: '#F5F3FF', // Violet 50 - Page background
+                surface: '#FFFFFF',
+                text: '#111827', // Gray 900 - Sharp black
+                textLight: '#374151', // Gray 700 - Readable gray
+                white: '#FFFFFF',
               }
             },
+            borderRadius: {
+              'xl': '1rem',
+              '2xl': '1.5rem',
+              '3xl': '2rem',
+            },
             boxShadow: {
-              'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
-              'gold': '0 4px 20px -2px rgba(212, 175, 55, 0.25)',
+              'soft': '0 10px 40px -10px rgba(109, 40, 217, 0.15)',
+              'glow': '0 0 20px rgba(109, 40, 217, 0.5)',
             }
           }
         }
@@ -42,8 +48,8 @@
     </script>
     <style>
       body {
-        background-color: #FAFAFA;
-        color: #1A1A1A;
+        background-color: #F5F3FF;
+        color: #111827;
         overflow-x: hidden;
       }
       .scroll-smooth {

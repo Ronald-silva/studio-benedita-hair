@@ -30,14 +30,14 @@ const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
   return (
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-soft py-3' : 'bg-transparent py-5'
+        isScrolled ? 'bg-white/80 backdrop-blur-md shadow-soft py-3' : 'bg-transparent py-5'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
-          <a href="#" className={`font-heading font-bold text-xl md:text-2xl tracking-tighter ${isScrolled ? 'text-studio-black' : 'text-white'}`}>
-            Studio <span className="text-studio-gold">Benedita</span> Hair
+          <a href="#" className={`font-heading font-bold text-xl md:text-2xl tracking-tighter ${isScrolled ? 'text-studio-primaryDark' : 'text-white'}`}>
+            Studio <span className={`${isScrolled ? 'text-studio-primary' : 'text-studio-accent'}`}>Benedita</span> Hair
           </a>
         </div>
 
@@ -47,7 +47,11 @@ const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
             <button 
               key={link.label}
               onClick={() => scrollToSection(link.href)}
-              className={`text-sm font-medium hover:text-studio-gold transition-colors uppercase tracking-wide ${isScrolled ? 'text-studio-black' : 'text-white'}`}
+              className={`text-sm font-medium transition-colors uppercase tracking-wide ${
+                isScrolled 
+                  ? 'text-studio-text hover:text-studio-primary' 
+                  : 'text-white hover:text-studio-accent'
+              }`}
             >
               {link.label}
             </button>
@@ -64,7 +68,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
 
         {/* Mobile Menu Button */}
         <button 
-          className={`md:hidden ${isScrolled ? 'text-studio-black' : 'text-white'}`}
+          className={`md:hidden ${isScrolled ? 'text-studio-text' : 'text-white'}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -79,7 +83,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
             <button 
               key={link.label}
               onClick={() => scrollToSection(link.href)}
-              className="text-left text-lg font-medium text-studio-black py-2 border-b border-gray-50 last:border-0"
+              className="text-left text-lg font-medium text-studio-text py-2 border-b border-gray-50 last:border-0"
             >
               {link.label}
             </button>

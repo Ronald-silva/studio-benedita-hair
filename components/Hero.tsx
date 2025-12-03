@@ -16,14 +16,14 @@ const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           className="w-full h-full object-cover object-center"
         />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-studio-primaryDark/90 to-studio-primaryDark/75"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 md:px-6 text-center text-white max-w-4xl pt-20">
         <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-7xl mb-6 leading-tight animate-fade-in-up">
           Transformação que vai além da beleza. <br />
-          <span className="text-studio-gold">É autoconfiança.</span>
+          <span className="text-studio-accent">É autoconfiança.</span>
         </h1>
         <p className="font-sans text-lg md:text-xl lg:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto opacity-90 animate-fade-in-up delay-100">
           Alisamento progressivo e tratamentos capilares de excelência para você revelar a sua melhor versão.

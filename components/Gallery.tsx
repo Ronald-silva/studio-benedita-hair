@@ -31,13 +31,13 @@ const Gallery: React.FC = () => {
   return (
     <Section id="gallery" className="bg-white">
       <div className="text-center mb-12 md:mb-16">
-        <h2 className="text-xs md:text-sm font-bold text-studio-gold uppercase tracking-widest mb-2">
+        <h2 className="text-xs md:text-sm font-bold text-studio-secondary uppercase tracking-widest mb-2">
           Portfolio
         </h2>
         <h3 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold text-studio-black px-4">
           Resultados que falam
         </h3>
-        <div className="w-12 md:w-16 h-1 bg-studio-gold mx-auto mt-3 md:mt-4"></div>
+        <div className="w-12 md:w-16 h-1 bg-studio-primary mx-auto mt-3 md:mt-4"></div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 max-w-5xl mx-auto px-4 md:px-6">
@@ -55,7 +55,7 @@ const Gallery: React.FC = () => {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 md:p-6 lg:p-8">
-                <span className="text-studio-gold font-bold text-xs md:text-sm tracking-wider uppercase mb-1 md:mb-2">
+                <span className="text-studio-primary font-bold text-xs md:text-sm tracking-wider uppercase mb-1 md:mb-2">
                   Ver Transformação
                 </span>
                 <p className="text-white font-heading font-semibold text-lg md:text-xl mb-1 md:mb-2">
@@ -78,7 +78,7 @@ const Gallery: React.FC = () => {
         >
           <button
             onClick={closeLightbox}
-            className="absolute top-4 right-4 md:top-6 md:right-6 text-white hover:text-studio-gold transition-colors z-10"
+            className="absolute top-4 right-4 md:top-6 md:right-6 text-white hover:text-studio-primary transition-colors z-10"
           >
             <X size={28} className="md:hidden" />
             <X size={40} className="hidden md:block" />
@@ -104,7 +104,7 @@ const Gallery: React.FC = () => {
 
             {/* Imagem Depois */}
             <div className="relative">
-              <span className="absolute top-3 left-3 md:top-4 md:left-4 lg:top-6 lg:left-6 bg-studio-gold text-white px-3 py-2 md:px-4 md:py-2 lg:px-5 lg:py-3 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider z-10 shadow-lg">
+              <span className="absolute top-3 left-3 md:top-4 md:left-4 lg:top-6 lg:left-6 bg-studio-primary text-white px-3 py-2 md:px-4 md:py-2 lg:px-5 lg:py-3 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider z-10 shadow-lg">
                 Depois
               </span>
               <div className="aspect-[3/4] md:aspect-[4/5] rounded-xl md:rounded-2xl overflow-hidden shadow-2xl">

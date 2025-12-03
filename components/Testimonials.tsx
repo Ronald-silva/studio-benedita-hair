@@ -21,7 +21,7 @@ const Testimonials: React.FC = () => {
   return (
     <Section id="testimonials" className="bg-studio-pink/10">
       <div className="text-center mb-16">
-        <h2 className="text-sm font-bold text-studio-gold uppercase tracking-widest mb-2">Depoimentos</h2>
+        <h2 className="text-sm font-bold text-studio-secondary uppercase tracking-widest mb-2">Depoimentos</h2>
         <h3 className="font-heading text-3xl md:text-4xl font-bold text-studio-black">O que dizem nossas clientes</h3>
       </div>
 
@@ -33,20 +33,20 @@ const Testimonials: React.FC = () => {
         {/* Navigation Buttons */}
         <button 
           onClick={prev}
-          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 p-2 rounded-full bg-white shadow-md text-studio-black hover:text-studio-gold transition-colors z-10"
+          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 p-2 rounded-full bg-white shadow-md text-studio-primaryDark hover:text-studio-primary transition-colors z-10"
         >
           <ChevronLeft size={24} />
         </button>
         <button 
           onClick={next}
-          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 p-2 rounded-full bg-white shadow-md text-studio-black hover:text-studio-gold transition-colors z-10"
+          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 p-2 rounded-full bg-white shadow-md text-studio-primaryDark hover:text-studio-primary transition-colors z-10"
         >
           <ChevronRight size={24} />
         </button>
 
         {/* Card */}
         <div className="bg-white rounded-2xl shadow-soft p-8 md:p-12 text-center relative overflow-hidden">
-            <Quote className="absolute top-6 left-6 text-studio-gold/20 w-16 h-16" />
+            <Quote className="absolute top-6 left-6 text-studio-primary/20 w-16 h-16" />
             
             <div className="relative z-10">
                 <div className="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden border-4 border-studio-pink/30">
@@ -59,7 +59,7 @@ const Testimonials: React.FC = () => {
                 
                 <div className="flex justify-center gap-1 mb-6">
                     {[...Array(5)].map((_, i) => (
-                        <Star key={i} size={18} className="fill-studio-gold text-studio-gold" />
+                        <Star key={i} size={18} className="fill-studio-primary text-studio-primary" />
                     ))}
                 </div>
 
@@ -80,7 +80,7 @@ const Testimonials: React.FC = () => {
                     key={index}
                     onClick={() => setCurrentIndex(index)}
                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                        index === currentIndex ? 'bg-studio-gold w-8' : 'bg-gray-300 hover:bg-gray-400'
+                        index === currentIndex ? 'bg-studio-primary w-8' : 'bg-gray-300 hover:bg-gray-400'
                     }`}
                 />
             ))}

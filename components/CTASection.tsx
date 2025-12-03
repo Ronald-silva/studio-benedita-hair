@@ -9,7 +9,7 @@ interface CTASectionProps {
 
 const CTASection: React.FC<CTASectionProps> = ({ onOpenBooking }) => {
   return (
-    <section className="py-20 bg-gradient-to-r from-studio-pinkHover to-studio-goldLight text-studio-black relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-r from-studio-primary to-studio-primaryDark text-white relative overflow-hidden">
       {/* Decorative Circles */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-white/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/20 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
@@ -34,22 +34,22 @@ const CTASection: React.FC<CTASectionProps> = ({ onOpenBooking }) => {
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 mt-8">
             <div className="flex items-center gap-3">
-                <div className="bg-white/30 p-3 rounded-full">
-                    <Phone size={24} className="text-studio-black" />
+                <div className="bg-white/20 p-3 rounded-full">
+                    <Phone size={24} className="text-white" />
                 </div>
                 <span className="font-semibold text-lg">{CONTACT_INFO.phone}</span>
             </div>
             
             <a href={CONTACT_INFO.instagramUrl} target="_blank" rel="noreferrer" className="flex items-center gap-3 group hover:opacity-80 transition-opacity">
-                <div className="bg-white/30 p-3 rounded-full">
-                    <Instagram size={24} className="text-studio-black" />
+                <div className="bg-white/20 p-3 rounded-full">
+                    <Instagram size={24} className="text-white" />
                 </div>
                 <span className="font-semibold text-lg">{CONTACT_INFO.instagram}</span>
             </a>
 
             <div className="flex items-center gap-3">
-                <div className="bg-white/30 p-3 rounded-full">
-                    <MapPin size={24} className="text-studio-black" />
+                <div className="bg-white/20 p-3 rounded-full">
+                    <MapPin size={24} className="text-white" />
                 </div>
                 <span className="font-semibold text-lg">Fortaleza, CE</span>
             </div>

@@ -12,9 +12,9 @@ const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
   return (
     <Section id="services" className="bg-white">
       <div className="text-center mb-16">
-        <h2 className="text-sm font-bold text-studio-gold uppercase tracking-widest mb-2">Menu de Serviços</h2>
-        <h3 className="font-heading text-3xl md:text-4xl font-bold text-studio-black">Invista em Você</h3>
-        <div className="w-16 h-1 bg-studio-gold mx-auto mt-4"></div>
+        <h2 className="text-sm font-bold text-studio-secondary uppercase tracking-widest mb-2">Menu de Serviços</h2>
+        <h3 className="font-heading text-3xl md:text-4xl font-bold text-studio-primaryDark">Invista em Você</h3>
+        <div className="w-16 h-1 bg-studio-primary mx-auto mt-4"></div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -23,11 +23,11 @@ const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
             key={service.id}
             className={`
               relative rounded-2xl p-8 border transition-all duration-300 hover:-translate-y-2
-              ${index === 1 ? 'bg-studio-black text-white border-studio-black shadow-xl ring-4 ring-studio-gold/20' : 'bg-white text-studio-text border-gray-100 shadow-soft hover:shadow-gold'}
+              ${index === 1 ? 'bg-studio-primaryDark text-white border-studio-primaryDark shadow-xl ring-4 ring-studio-primary/20' : 'bg-white text-studio-text border-gray-100 shadow-soft hover:shadow-glow'}
             `}
           >
             {index === 1 && (
-              <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-studio-gold text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">
+              <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-studio-primary text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">
                 Mais Popular
               </span>
             )}
@@ -41,7 +41,7 @@ const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
                 <p className="text-sm opacity-80 mb-1">A partir de</p>
                 <div className="flex items-baseline gap-1">
                     <span className="text-sm font-semibold">R$</span>
-                    <span className={`text-4xl font-heading font-bold ${index === 1 ? 'text-studio-gold' : 'text-studio-black'}`}>
+                    <span className={`text-4xl font-heading font-bold ${index === 1 ? 'text-studio-secondary' : 'text-studio-primaryDark'}`}>
                         {service.price}
                     </span>
                 </div>
@@ -50,7 +50,7 @@ const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
             <ul className="space-y-4 mb-8">
                 {service.benefits?.map((benefit, i) => (
                     <li key={i} className="flex items-start gap-3">
-                        <Check size={18} className={index === 1 ? 'text-studio-gold mt-1' : 'text-green-500 mt-1'} />
+                        <Check size={18} className={index === 1 ? 'text-studio-secondary mt-1' : 'text-green-500 mt-1'} />
                         <span className={`text-sm ${index === 1 ? 'text-gray-200' : 'text-gray-600'}`}>{benefit}</span>
                     </li>
                 ))}

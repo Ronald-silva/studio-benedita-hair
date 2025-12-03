@@ -4,19 +4,19 @@ import { Instagram, Phone, MapPin, Clock } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-studio-black text-white pt-16 pb-8">
+    <footer className="bg-studio-primaryDark text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             {/* Brand */}
             <div>
                 <h3 className="font-heading font-bold text-2xl mb-6">
-                    Studio <span className="text-studio-gold">Benedita</span> Hair
+                    Studio <span className="text-studio-accent">Benedita</span> Hair
                 </h3>
                 <p className="text-gray-400 mb-6">
                     Especialistas em realçar sua beleza natural através de tratamentos capilares de alta performance.
                 </p>
                 <div className="flex gap-4">
-                    <a href={CONTACT_INFO.instagramUrl} className="bg-gray-800 p-2 rounded-full hover:bg-studio-gold transition-colors text-white">
+                    <a href={CONTACT_INFO.instagramUrl} className="bg-white/10 p-2 rounded-full hover:bg-studio-primary transition-colors text-white">
                         <Instagram size={20} />
                     </a>
                     
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
 
             {/* Quick Links */}
             <div>
-                <h4 className="font-bold text-lg mb-6 text-studio-gold">Links Rápidos</h4>
+                <h4 className="font-bold text-lg mb-6 text-studio-accent">Links Rápidos</h4>
                 <ul className="space-y-3">
                     <li><a href="#home" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
                     <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Serviços</a></li>
@@ -37,19 +37,19 @@ const Footer: React.FC = () => {
 
             {/* Contact */}
             <div>
-                <h4 className="font-bold text-lg mb-6 text-studio-gold">Contato</h4>
+                <h4 className="font-bold text-lg mb-6 text-studio-accent">Contato</h4>
                 <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                        <MapPin size={20} className="text-studio-gold shrink-0 mt-1" />
-                        <span className="text-gray-400">{CONTACT_INFO.address}</span>
+                        <MapPin size={20} className="text-studio-accent shrink-0 mt-1" />
+                        <span className="text-gray-300">{CONTACT_INFO.address}</span>
                     </li>
                     <li className="flex items-center gap-3">
-                        <Phone size={20} className="text-studio-gold shrink-0" />
-                        <span className="text-gray-400">{CONTACT_INFO.phone}</span>
+                        <Phone size={20} className="text-studio-accent shrink-0" />
+                        <span className="text-gray-300">{CONTACT_INFO.phone}</span>
                     </li>
                     <li className="flex items-start gap-3">
-                        <Clock size={20} className="text-studio-gold shrink-0 mt-1" />
-                        <span className="text-gray-400">Seg - Sáb: 09:00 - 18:00<br/>Dom: Fechado</span>
+                        <Clock size={20} className="text-studio-accent shrink-0 mt-1" />
+                        <span className="text-gray-300">Seg - Sáb: 09:00 - 18:00<br/>Dom: Fechado</span>
                     </li>
                 </ul>
             </div>
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
                         href="https://www.google.com/maps/place/Espa%C3%A7o+Benedita+Hair/@-3.7690538,-38.5762238,17z/data=!3m1!4b1!4m6!3m5!1s0x7c74df77c215609:0x4060655d0ba40889!8m2!3d-3.7690592!4d-38.5736489!16s%2Fg%2F11sdzpzwbb?authuser=0&entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" 
                         target="_blank" 
                         rel="noreferrer"
-                        className="bg-white text-studio-black px-4 py-2 rounded-full font-bold text-sm hover:bg-studio-gold hover:text-white transition-colors shadow-lg"
+                        className="bg-white text-studio-primaryDark px-4 py-2 rounded-full font-bold text-sm hover:bg-studio-primary hover:text-white transition-colors shadow-lg"
                     >
                         Ver no Google Maps
                     </a>

@@ -38,7 +38,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
       <div className="bg-white rounded-2xl w-full max-w-md shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200">
         
         {/* Header */}
-        <div className="bg-studio-black text-white p-6 flex justify-between items-center">
+        <div className="bg-studio-primaryDark text-white p-6 flex justify-between items-center">
             <h3 className="font-heading font-bold text-xl">Agendar Horário</h3>
             <button onClick={handleClose} className="text-gray-400 hover:text-white transition-colors">
                 <X size={24} />
@@ -54,7 +54,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
                         <input 
                             required
                             type="text" 
-                            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-studio-gold focus:border-transparent outline-none"
+                            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-studio-primary focus:border-transparent outline-none"
                             placeholder="Seu nome"
                             value={formData.name}
                             onChange={e => setFormData({...formData, name: e.target.value})}
@@ -65,7 +65,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
                         <input 
                             required
                             type="tel" 
-                            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-studio-gold focus:border-transparent outline-none"
+                            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-studio-primary focus:border-transparent outline-none"
                             placeholder="(00) 00000-0000"
                             value={formData.phone}
                             onChange={e => setFormData({...formData, phone: e.target.value})}
@@ -75,7 +75,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
                         <label className="block text-sm font-medium text-gray-700 mb-1">Serviço de Interesse</label>
                         <select 
                             required
-                            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-studio-gold focus:border-transparent outline-none bg-white"
+                            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-studio-primary focus:border-transparent outline-none bg-white"
                             value={formData.service}
                             onChange={e => setFormData({...formData, service: e.target.value})}
                         >
@@ -100,7 +100,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
                     <div className="w-16 h-16 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                         <CheckCircle size={32} />
                     </div>
-                    <h4 className="font-bold text-2xl text-studio-black mb-2">Recebemos seu pedido!</h4>
+                    <h4 className="font-bold text-2xl text-studio-primaryDark mb-2">Recebemos seu pedido!</h4>
                     <p className="text-gray-600 mb-6">
                         Obrigado, {formData.name}. Nossa equipe entrará em contato pelo WhatsApp em instantes para finalizar o agendamento.
                     </p>

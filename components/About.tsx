@@ -9,7 +9,7 @@ const About: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Content Side - Order 1 on Mobile, Order 2 on Desktop */}
         <div className="order-1 lg:order-2">
-          <h2 className="text-sm font-bold text-studio-gold uppercase tracking-widest mb-2">Sobre a Especialista</h2>
+          <h2 className="text-sm font-bold text-studio-secondary uppercase tracking-widest mb-2">Sobre a Especialista</h2>
           <h3 className="font-heading text-3xl md:text-4xl font-bold text-studio-black mb-6">
             Excelência técnica e paixão por elevar sua autoestima
           </h3>
@@ -58,7 +58,7 @@ const About: React.FC = () => {
           </div>
           {/* Badge */}
           <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-gold max-w-[200px] hidden md:block">
-            <p className="font-heading font-bold text-4xl text-studio-gold mb-1">10+</p>
+            <p className="font-heading font-bold text-4xl text-studio-primary mb-1">10+</p>
             <p className="text-gray-600 text-sm font-medium">Anos transformando autoestimas</p>
           </div>
         </div>
