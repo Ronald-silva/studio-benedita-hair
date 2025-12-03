@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                     Especialistas em realçar sua beleza natural através de tratamentos capilares de alta performance.
                 </p>
                 <div className="flex gap-4">
-                    <a href={CONTACT_INFO.instagramUrl} className="bg-white/10 p-2 rounded-full hover:bg-studio-primary transition-colors text-white">
+                    <a href={CONTACT_INFO.instagramUrl} aria-label="Visitar nosso Instagram" className="bg-white/10 p-2 rounded-full hover:bg-studio-primary transition-colors text-white">
                         <Instagram size={20} />
                     </a>
                     
@@ -27,11 +27,11 @@ const Footer: React.FC = () => {
             <div>
                 <h4 className="font-bold text-lg mb-6 text-studio-accent">Links Rápidos</h4>
                 <ul className="space-y-3">
-                    <li><a href="#home" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                    <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Serviços</a></li>
-                    <li><a href="#gallery" className="text-gray-400 hover:text-white transition-colors">Galeria</a></li>
-                    <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">Sobre</a></li>
-                    <li><a href="#faq" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                    <li><a href="#home" className="text-gray-400 hover:text-studio-accent hover:translate-x-1 transition-all inline-block">Home</a></li>
+                    <li><a href="#services" className="text-gray-400 hover:text-studio-accent hover:translate-x-1 transition-all inline-block">Serviços</a></li>
+                    <li><a href="#gallery" className="text-gray-400 hover:text-studio-accent hover:translate-x-1 transition-all inline-block">Galeria</a></li>
+                    <li><a href="#about" className="text-gray-400 hover:text-studio-accent hover:translate-x-1 transition-all inline-block">Sobre</a></li>
+                    <li><a href="#faq" className="text-gray-400 hover:text-studio-accent hover:translate-x-1 transition-all inline-block">FAQ</a></li>
                 </ul>
             </div>
 
@@ -76,7 +76,12 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-            <p>&copy; {new Date().getFullYear()} Studio Benedita Hair. Todos os direitos reservados.</p>
+            <p className="flex flex-col md:flex-row justify-center items-center gap-2">
+                <span>&copy; {new Date().getFullYear()} Studio Benedita Hair. Todos os direitos reservados.</span>
+            </p>
+            <p className="flex flex-col md:flex-row justify-center items-center gap-2">
+                <span className="text-studio-accent/80 hover:text-studio-accent transition-colors font-medium">By RonalDigital</span>
+            </p>
         </div>
       </div>
     </footer>
